@@ -1,0 +1,15 @@
+# Order 2 
+# Order 2 
+# Topology   [1]
+  2  3  0  1
+# Symmetry Factor 
+ 1.0 
+# Loop Bases
+  1  0  0  1
+  1  0  1  0
+  0  1  0  1
+# Ver Loop Bases
+  1  0
+  0  1
+  0 -1
+
