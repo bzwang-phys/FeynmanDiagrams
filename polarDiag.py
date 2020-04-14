@@ -3,7 +3,7 @@
 from functions import *
 import copy
 
-Order = 3
+Order = 2
 diags, syms, bases = get_diags(Order)
 
 dnum = 0

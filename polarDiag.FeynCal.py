@@ -3,7 +3,7 @@
 from functions_feyn import *
 import copy
 
-Order = 2
+Order = 6
 diags, syms, bases = get_diags(Order)
 
 # with open("DiagPolar{0}.new.txt".format(Order), 'a') as f:
@@ -29,11 +29,12 @@ for i in range(len(diags)):
         if HasFock(key) or HasHartree(key):
             del Hugenholtz_diags[key]
 
-        # elif has_dressed_green(key, value[0]):
-        #     p = Diag(list(key), value[1], value[0])
-        #     Diag.name = Diag.name + 1
-        #     write(p)
-        #     del Hugenholtz_diags[key]
+        elif has_dressed_green(key, value[0]):
+            pass
+            # p = Diag(list(key), value[1], value[0])
+            # Diag.name = Diag.name + 1
+            # write(p)
+            # del Hugenholtz_diags[key]
 
     # Pick the diagrams which can maximize the cancellation.
     tem = copy.deepcopy(Hugenholtz_diags)
